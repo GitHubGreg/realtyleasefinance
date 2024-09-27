@@ -112,7 +112,7 @@ function NewsletterForm() {
 
 export function Footer() {
   return (
-    <Container as="footer" className="mt-24 w-full sm:mt-32 lg:mt-40">
+    <Container as="footer" className="mt-24 px-0 sm:mt-32 lg:mt-40 lg:px-0">
       <FadeIn>
         <div className="mt-24 flex flex-wrap items-center justify-between gap-x-6 gap-y-4 border-t border-neutral-900/10 pt-12">
           <Link href="/" aria-label="Home">

@@ -31,3 +31,46 @@
   content: '•';
   @apply absolute left-0 text-white;
 }
+
+.arrowSectionContainer {
+  @apply flex w-full justify-between;
+}
+
+.arrowSectionBox {
+  @apply relative ml-5 w-[30%] bg-neutral-900 p-4 text-white;
+}
+
+.arrowSectionBox:first-of-type {
+  @apply ml-0;
+}
+
+.arrowSectionTitleContainer {
+  @apply pr-5;
+}
+
+.arrowSectionTitle {
+  @apply relative w-fit bg-white p-2.5 text-xl font-bold text-neutral-900;
+}
+
+.arrowSectionTitle::after {
+  content: '';
+  @apply absolute -right-[25px] top-0 h-0 w-0 border-b-[25px] border-l-[25px] border-t-[25px] border-b-transparent border-l-white border-t-transparent;
+}
+
+.arrowSectionSubtitle {
+  @apply my-[15px] text-base font-extrabold text-white;
+}
+
+.arrowSectionContent {
+  @apply text-sm;
+}
+
+@media (max-width: 768px) {
+  .arrowSectionContainer {
+    @apply flex-col;
+  }
+
+  .arrowSectionBox {
+    @apply mb-5 ml-0 w-full;
+  }
+}

@@ -15,7 +15,7 @@ export const BoxSection: React.FC<BoxSectionProps> = ({
 }) => (
   <div className={`${parentClass} flex flex-col`}>
     <div className="flex h-full flex-col">
-      <div className="flex h-20 items-center justify-center rounded-t-lg bg-gray-100 p-4 text-center">
+      <div className="flex h-20 items-center justify-center rounded-t-lg bg-white p-4 text-center">
         <div>
           <h3
             className={`text-neutral-900 ${parentClass === 'boxStyle' ? 'font-serif text-xl font-medium' : 'text-2xl font-bold'}`}

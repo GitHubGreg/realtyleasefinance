@@ -13,6 +13,25 @@ import { BoxSection } from '@/components/BoxSection'
 import { PropertyDetails } from '@/components/PropertyDetails'
 import { Footer } from '@/components/Footer'
 
+// New ArrowSections component
+const ArrowSections: React.FC<{
+  sections: { title: string; subtitle?: string; content: React.ReactNode }[]
+}> = ({ sections }) => (
+  <div className={styles.arrowSectionContainer}>
+    {sections.map((section, index) => (
+      <div key={index} className={styles.arrowSectionBox}>
+        <div className={styles.arrowSectionTitleContainer}>
+          <div className={styles.arrowSectionTitle}>{section.title}</div>
+        </div>
+        {section.subtitle && (
+          <div className={styles.arrowSectionSubtitle}>{section.subtitle}</div>
+        )}
+        <div className={styles.arrowSectionContent}>{section.content}</div>
+      </div>
+    ))}
+  </div>
+)
+
 export const metadata: Metadata = {
   description:
     'Realty Lease Finance Corporation provides upfront capital for leasing costs in exchange for direct payments from corporate tenants.',
@@ -181,11 +200,10 @@ export default function Home() {
                     Rental obligations remain the same as original lease
                   </ListItem>
                   <ListItem>
-                    Ability to up-size TI if necessary (with corresponding increase in rental rate)
+                    Ability to up-size TI if necessary (with corresponding
+                    increase in rental rate)
                   </ListItem>
-                  <ListItem>
-                    Simple agreements with minimal legal work
-                  </ListItem>
+                  <ListItem>Simple agreements with minimal legal work</ListItem>
                 </List>
               </>
             }
@@ -397,6 +415,54 @@ export default function Home() {
         </SectionIntro>
       </Container>
 
+      <Container className="mt-24 rounded-4xl bg-neutral-100 py-20 sm:mt-32 lg:mt-40">
+        <SectionIntro title="Your Investor Experience">
+          <p className="text-md mb-6 mt-6 text-neutral-600">
+            A Dedicated Investor Relations Team Is Always Available To You
+          </p>
+        </SectionIntro>
+        <div className="mx-8 mt-8 flex flex-wrap justify-between">
+          <ArrowSections
+            sections={[
+              {
+                title: 'Step 1',
+                subtitle: 'Commitment',
+                content:
+                  'Commitment letter outlining subscription amount which can be called in-part or in full within 12 months.',
+              },
+              {
+                title: 'Step 2',
+                subtitle: 'Subscription',
+                content:
+                  'Subscription documents and legal agreements prepared for review and execution.',
+              },
+              {
+                title: 'Step 3',
+                subtitle: 'Funding',
+                content:
+                  'Capital call notice for partial or full commitment amount with a 10-day funding window.',
+              },
+              {
+                title: 'Step 4',
+                subtitle: 'Distributions & Reporting',
+                content: (
+                  <div>
+                    <div>
+                      First of twenty (20) quarterly distributions paid fifteen
+                      (15) days following one full quarter after funding.
+                    </div>
+                    <div className={'mt-3'}>
+                      Investor Portal provides all documents including,
+                      quarterly reports, capital accounts, distribution notices
+                      & tax documents.
+                    </div>
+                  </div>
+                ),
+              },
+            ]}
+          />
+        </div>
+      </Container>
       <ContactSection />
       <Footer />
     </>
