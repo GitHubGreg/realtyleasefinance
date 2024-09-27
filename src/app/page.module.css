@@ -1,5 +1,6 @@
 .boxStyleConnected {
   @apply relative w-[45%] rounded-t-lg border-2 border-neutral-900;
+  margin: 0 1px;
 }
 
 .boxStyleConnected::before {
