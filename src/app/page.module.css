@@ -1,14 +1,14 @@
 .boxStyleConnected {
-  @apply relative w-[45%] rounded-t-lg border-2 border-blue-800;
+  @apply relative w-[45%] rounded-t-lg border-2 border-neutral-900;
 }
 
 .boxStyleConnected::before {
   content: '';
-  @apply absolute -top-[22px] left-1/2 h-[22px] w-0.5 bg-blue-800;
+  @apply absolute -top-[22px] left-1/2 h-[22px] w-0.5 bg-neutral-900;
 }
 
 .boxStyle {
-  @apply relative w-[32%] rounded-t-lg border-2 border-blue-800;
+  @apply relative w-[32%] rounded-t-lg border-2 border-neutral-900;
 }
 
 @media (max-width: 768px) {

@@ -20,24 +20,26 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Container className="mt-24 sm:mt-32 md:mt-56">
-        <FadeIn className="max-w-3xl">
-          <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            Realty Lease Finance (RELEAF)
-          </h1>
-          <p className="mt-6 text-xl text-neutral-600">
-            Realty Lease Finance Corporation provides upfront capital for
-            leasing costs in exchange for direct payments from corporate
-            tenants. RELEAF transactions are generally structured as five-year
-            cash flow streams with an annual cash yield of 25.5% to investors.
-          </p>
+      <Container className="mt-6 sm:mt-16 md:mt-24">
+        <FadeIn>
+          <div className="px-6 lg:px-8">
+            <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-900 [text-wrap:balance] sm:text-7xl">
+              Secure high quality corporate credit for discounted pricing
+            </h1>
+            <p className="mt-6 text-xl text-neutral-600">
+              Realty Lease Finance Corporation provides upfront capital for
+              leasing costs in exchange for direct payments from corporate
+              tenants. RELEAF transactions are generally structured as five-year
+              cash flow streams with an annual cash yield of 25.5% to investors.
+            </p>
+          </div>
         </FadeIn>
       </Container>
 
-      <Container className="mt-24 sm:mt-32 lg:mt-40">
-        <SectionIntro title="Offering Overview">
+      <Container className="mt-24 rounded-4xl bg-neutral-100 py-20 sm:mt-32 lg:mt-40">
+        <SectionIntro title="Overview">
           <PropertyDetails
-            title="Offering Overview"
+            title=""
             detailSpecs1={[
               { title: 'Entity', value: 'RELEAF Portfolio LP' },
               { title: 'Inception', value: 'Q4 2024' },
@@ -76,15 +78,17 @@ export default function Home() {
 
       <Container className="mt-24 sm:mt-32 lg:mt-40">
         <SectionIntro title="RELEAF Mechanics">
-          <p className="mt-6 text-sm text-neutral-600">
+          <p className="text-md mt-6 text-neutral-600">
             Specialized Direct Lease Payments from High Quality Corporate
             Tenants
           </p>
-          <p className="mt-4 text-sm text-blue-800">Corporate Lease</p>
+          <p className="text-md mt-4 text-neutral-900">Corporate Lease</p>
           <div className="mt-8 flex flex-col items-center">
-            <div className="mb-5 w-3/4 rounded bg-blue-800 p-4 text-center text-white">
+            <div className="mb-5 w-3/4 rounded bg-neutral-900 p-4 text-center text-white">
               <h3 className="text-2xl font-bold">RENTAL INCOME</h3>
-              <p className="mt-2 text-sm">New "Financing Technology"</p>
+              <p className="text-md mt-2">
+                New &ldquo;Financing Technology&rdquo;
+              </p>
             </div>
             <div className="flex w-full justify-between">
               <BoxSection
@@ -126,9 +130,9 @@ export default function Home() {
         </SectionIntro>
       </Container>
 
-      <Container className="mt-24 bg-neutral-100 py-20 sm:mt-32 lg:mt-40">
+      <Container className="mt-24 rounded-4xl bg-neutral-100 py-20 sm:mt-32 lg:mt-40">
         <SectionIntro title="Market Dynamics">
-          <p className="mt-6 text-sm text-neutral-600">
+          <p className="text-md mb-6 mt-6 text-neutral-600">
             Valuable Solutions for Both Tenants and Landlords
           </p>
           <LeftRightBlueWhite
@@ -139,20 +143,20 @@ export default function Home() {
                   style={{ color: 'white' }}
                 />
                 <List className="mt-4 text-white">
-                  <ListItem>
+                  <ListItem invert={true}>
                     High TI needs; high quality office space required to attract
                     workers.
                   </ListItem>
-                  <ListItem>
+                  <ListItem invert={true}>
                     Expectation that landlords will pay tenant improvement costs
                     in full; heavy tenant reluctance to invest in landlord
                     space.
                   </ListItem>
-                  <ListItem>
+                  <ListItem invert={true}>
                     Tenant willing to pay higher rent for more tenant
                     improvements.
                   </ListItem>
-                  <ListItem>
+                  <ListItem invert={true}>
                     Landlords increasingly deficient in reimbursing TI expenses
                     on-time and in-full as agreed in lease.
                   </ListItem>
@@ -163,7 +167,7 @@ export default function Home() {
               <>
                 <SectionTitle
                   text="RELEAF Solutions"
-                  style={{ color: '#666' }}
+                  style={{ color: 'rgb(82 82 82)' }}
                 />
                 <List className="mt-4 text-neutral-600">
                   <ListItem>
@@ -182,6 +186,67 @@ export default function Home() {
               </>
             }
           />
+          <LeftRightBlueWhite
+            containerStyle={{ marginTop: 20 }}
+            leftContent={
+              <>
+                <SectionTitle
+                  text="Landlord Challenges"
+                  style={{ color: 'white' }}
+                />
+                <List className="mt-4 text-white">
+                  <ListItem invert={true}>
+                    Lease profile creates long "J-curve" returns for each new
+                    lease
+                  </ListItem>
+                  <ListItem invert={true}>
+                    Combination of higher operating expenses, higher
+                    construction costs, higher interest rates and lower tenant
+                    demand have put heavy pressure on cash flows and reserves
+                  </ListItem>
+                  <ListItem invert={true}>
+                    Lenders are increasingly reluctant to fund TIs and cutting
+                    back on TI facilities
+                  </ListItem>
+                  <ListItem invert={true}>
+                    TI availability creating enormous competitive advantage to
+                    attract tenants
+                  </ListItem>
+                </List>
+              </>
+            }
+            rightContent={
+              <>
+                <SectionTitle
+                  text="RELEAF Solutions"
+                  style={{ color: 'rgb(82 82 82)' }}
+                />
+                <List className="mt-4 text-neutral-600">
+                  <ListItem>
+                    In most cases completely eliminates working capital pressure
+                    and "J-curve".
+                  </ListItem>
+                  <ListItem>
+                    Allows to out-compete competition by offering generous TI
+                    packages.
+                  </ListItem>
+                  <ListItem>
+                    Immediately positive cash flow to at least partially absorb
+                    operating expenses.
+                  </ListItem>
+                  <ListItem>Asset improved with upgraded space.</ListItem>
+                  <ListItem>
+                    No more reliance on capricious lenders; no more delayed
+                    reimbursements.
+                  </ListItem>
+                  <ListItem>
+                    Meaningful leasing now possible even with minimal cash,
+                    reserves & working capital.
+                  </ListItem>
+                </List>
+              </>
+            }
+          />
         </SectionIntro>
       </Container>
 
@@ -189,11 +254,11 @@ export default function Home() {
 
       <Container className="mt-24 sm:mt-32 lg:mt-40">
         <SectionIntro title="RELEAF Underwriting">
-          <p className="mt-6 text-sm text-neutral-600">High Quality Credit</p>
-          <p className="mt-4 text-sm text-blue-800">Current Pipeline</p>
+          <p className="text-md mt-6 text-neutral-600">High Quality Credit</p>
+          <p className="text-md mt-4 text-neutral-900">Current Pipeline</p>
           <div className="mt-8 flex flex-wrap justify-between">
             <div className="w-full p-4 md:w-1/2">
-              <p className="mb-4 text-center text-sm text-neutral-600">
+              <p className="text-md mb-4 text-center text-neutral-600">
                 RELEAF Pipeline-Tenant Industry Composition
               </p>
               <Image
@@ -206,7 +271,7 @@ export default function Home() {
               />
             </div>
             <div className="w-full p-4 md:w-1/2">
-              <p className="mb-4 text-center text-sm text-neutral-600">
+              <p className="text-md mb-4 text-center text-neutral-600">
                 RELEAF Pipeline-Tenant Industry Composition
               </p>
               <Image
@@ -231,9 +296,9 @@ export default function Home() {
         </SectionIntro>
       </Container>
 
-      <Container className="mt-24 sm:mt-32 lg:mt-40">
+      <Container className="mt-24 rounded-4xl bg-neutral-100 py-20 sm:mt-32 lg:mt-40">
         <SectionIntro title="Downside Protection">
-          <p className="mt-6 text-sm text-neutral-600">
+          <p className="text-md mt-6 text-neutral-600">
             RELEAF Risk Mitigation
           </p>
           <div className="mt-8 flex flex-wrap justify-between">
@@ -315,7 +380,7 @@ export default function Home() {
 
       <Container className="mt-24 sm:mt-32 lg:mt-40">
         <SectionIntro title="RELEAF Structure">
-          <p className="mt-6 text-sm text-neutral-600">RELEAF Portfolio LP</p>
+          <p className="text-md mt-6 text-neutral-600">RELEAF Portfolio LP</p>
           <Image
             src={buildCloudinaryUrl(
               'v1727232084/opportunities/RELEAF/releaf-structure_dxu43m.png',

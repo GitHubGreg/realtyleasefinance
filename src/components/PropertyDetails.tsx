@@ -19,7 +19,7 @@ const DetailSpec: React.FC<DetailSpec> = ({ title, value }) => {
       <div className="mt-4 text-xs uppercase leading-tight text-gray-600">
         {title}
       </div>
-      <div className="mb-4 font-medium leading-relaxed text-blue-800">
+      <div className="mb-4 font-medium leading-relaxed text-neutral-900">
         {value}
       </div>
     </div>

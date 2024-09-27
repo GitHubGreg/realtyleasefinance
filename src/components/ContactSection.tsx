@@ -10,22 +10,46 @@ export function ContactSection() {
         <div className="mx-auto max-w-4xl">
           <div className="max-w-xl">
             <h2 className="font-display text-3xl font-medium text-white [text-wrap:balance] sm:text-4xl">
-              Tell us about your project
+              Contact us
             </h2>
-            <div className="mt-6 flex">
-              <Button href="/contact" invert>
-                Say Hej
-              </Button>
-            </div>
             <div className="mt-10 border-t border-white/10 pt-10">
-              <h3 className="font-display text-base font-semibold text-white">
-                Our offices
-              </h3>
-              <Offices
-                invert
-                className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2"
-              />
+              <div className="mt-6 text-base text-neutral-400">
+                <h3 className="font-semibold text-white">Group RMC</h3>
+                <p>One World Trade Center</p>
+                <p>Suite 83G</p>
+                <p>New York, NY 10007</p>
+                <p className="mt-4">
+                  <a
+                    href="mailto:info@grouprmcusa.com"
+                    className="text-neutral-400 hover:text-white"
+                  >
+                    info@grouprmcusa.com
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="tel:+19175039730"
+                    className="text-neutral-400 hover:text-white"
+                  >
+                    917-503-9730
+                  </a>
+                </p>
+              </div>
             </div>
+          </div>
+          <div className="text-md mx-auto mt-24 max-w-7xl text-neutral-400">
+            <p>
+              The information on this website is intended solely for the benefit
+              of firms and companies seeking private equity investment capital
+              by providing general information on our services and philosophy.
+              The material on this site is for informational purposes only and
+              does not constitute an offer or solicitation to purchase any
+              investment solutions or a recommendation to buy or sell a security
+              nor is it to be construed as investment advice. Additionally, the
+              material on this site does not constitute a representation that
+              the solutions described therein are suitable or appropriate for
+              any person.
+            </p>
           </div>
         </div>
       </FadeIn>

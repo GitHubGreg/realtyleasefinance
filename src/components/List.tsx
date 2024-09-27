@@ -22,16 +22,21 @@ export function List({
 export function ListItem({
   children,
   title,
+  invert = false,
 }: {
   children: React.ReactNode
   title?: string
+  invert?: boolean
 }) {
   return (
-    <li className="group mt-10 first:mt-0">
+    <li className="group mt-4 first:mt-0">
       <FadeIn>
-        <Border className="pt-10 group-first:pt-0 group-first:before:hidden group-first:after:hidden">
+        <Border
+          invert={invert}
+          className="pt-4 group-first:pt-0 group-first:before:hidden group-first:after:hidden"
+        >
           {title && (
-            <strong className="font-semibold text-neutral-950">{`${title}. `}</strong>
+            <strong className="font-semibold text-neutral-900">{`${title}. `}</strong>
           )}
           {children}
         </Border>

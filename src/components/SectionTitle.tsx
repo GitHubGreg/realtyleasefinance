@@ -7,7 +7,7 @@ interface ISectionTitle {
 
 export const SectionTitle: React.FC<ISectionTitle> = ({ text, style }) => {
   return (
-    <h2 className={`font-extrabold uppercase text-blue-800`} style={style}>
+    <h2 className={`text-2xl font-semibold text-neutral-900`} style={style}>
       {text}
     </h2>
   )

@@ -29,7 +29,7 @@ function CaseStudies({
   return (
     <Container className="mt-40">
       <FadeIn>
-        <h2 className="font-display text-2xl font-semibold text-neutral-950">
+        <h2 className="font-display text-2xl font-semibold text-neutral-900">
           Case studies
         </h2>
       </FadeIn>
@@ -46,23 +46,23 @@ function CaseStudies({
                       className="h-16 w-16 flex-none"
                       unoptimized
                     />
-                    <h3 className="mt-6 text-sm font-semibold text-neutral-950 sm:mt-0 lg:mt-8">
+                    <h3 className="text-md mt-6 font-semibold text-neutral-900 sm:mt-0 lg:mt-8">
                       {caseStudy.client}
                     </h3>
                   </div>
                   <div className="mt-1 flex gap-x-4 sm:mt-0 lg:block">
-                    <p className="text-sm tracking-tight text-neutral-950 after:ml-4 after:font-semibold after:text-neutral-300 after:content-['/'] lg:mt-2 lg:after:hidden">
+                    <p className="text-md tracking-tight text-neutral-900 after:ml-4 after:font-semibold after:text-neutral-300 after:content-['/'] lg:mt-2 lg:after:hidden">
                       {caseStudy.service}
                     </p>
-                    <p className="text-sm text-neutral-950 lg:mt-2">
+                    <p className="text-md text-neutral-900 lg:mt-2">
                       <time dateTime={caseStudy.date}>
                         {formatDate(caseStudy.date)}
                       </time>
                     </p>
                   </div>
                 </div>
-                <div className="col-span-full lg:col-span-2 lg:max-w-2xl">
-                  <p className="font-display text-4xl font-medium text-neutral-950">
+                <div className="col-span-full lg:col-span-2 lg:max-w-7xl">
+                  <p className="font-display text-4xl font-medium text-neutral-900">
                     <Link href={caseStudy.href}>{caseStudy.title}</Link>
                   </p>
                   <div className="mt-6 space-y-6 text-base text-neutral-600">
@@ -111,7 +111,7 @@ function Clients() {
   return (
     <Container className="mt-24 sm:mt-32 lg:mt-40">
       <FadeIn>
-        <h2 className="font-display text-2xl font-semibold text-neutral-950">
+        <h2 className="font-display text-2xl font-semibold text-neutral-900">
           You’re in good company
         </h2>
       </FadeIn>
