@@ -114,19 +114,24 @@ export function Footer() {
   return (
     <Container as="footer" className="mt-24 w-full sm:mt-32 lg:mt-40">
       <FadeIn>
-        <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
-          <Navigation />
-          <div className="flex lg:justify-end">
-            <NewsletterForm />
-          </div>
-        </div>
-        <div className="mb-20 mt-24 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-900/10 pt-12">
+        <div className="mt-24 flex flex-wrap items-center justify-between gap-x-6 gap-y-4 border-t border-neutral-900/10 pt-12">
           <Link href="/" aria-label="Home">
-            <Logo className="h-8" fillOnHover />
+            <Logo />
           </Link>
-          <p className="text-md text-neutral-700">
-            © Studio Agency Inc. {new Date().getFullYear()}
+          <p className="text-sm text-neutral-700">
+            © {new Date().getFullYear()} Group RMC. All rights reserved.
           </p>
+          <div className="mx-auto mb-6 max-w-7xl text-xs text-neutral-400">
+            The information on this website is intended solely for the benefit
+            of firms and companies seeking private equity investment capital by
+            providing general information on our services and philosophy. The
+            material on this site is for informational purposes only and does
+            not constitute an offer or solicitation to purchase any investment
+            solutions or a recommendation to buy or sell a security nor is it to
+            be construed as investment advice. Additionally, the material on
+            this site does not constitute a representation that the solutions
+            described therein are suitable or appropriate for any person.
+          </div>
         </div>
       </FadeIn>
     </Container>

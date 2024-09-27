@@ -11,6 +11,7 @@ import { buildCloudinaryUrl } from '@/utils/cloudinary'
 import styles from './page.module.css'
 import { BoxSection } from '@/components/BoxSection'
 import { PropertyDetails } from '@/components/PropertyDetails'
+import { Footer } from '@/components/Footer'
 
 export const metadata: Metadata = {
   description:
@@ -196,8 +197,8 @@ export default function Home() {
                 />
                 <List className="mt-4 text-white">
                   <ListItem invert={true}>
-                    Lease profile creates long "J-curve" returns for each new
-                    lease
+                    Lease profile creates long &quot;J-curve&quot; returns for
+                    each new lease
                   </ListItem>
                   <ListItem invert={true}>
                     Combination of higher operating expenses, higher
@@ -224,7 +225,7 @@ export default function Home() {
                 <List className="mt-4 text-neutral-600">
                   <ListItem>
                     In most cases completely eliminates working capital pressure
-                    and "J-curve".
+                    and &quot;J-curve&quot;.
                   </ListItem>
                   <ListItem>
                     Allows to out-compete competition by offering generous TI
@@ -394,6 +395,7 @@ export default function Home() {
       </Container>
 
       <ContactSection />
+      <Footer />
     </>
   )
 }

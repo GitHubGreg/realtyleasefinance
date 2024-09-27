@@ -37,20 +37,6 @@ export function ContactSection() {
               </div>
             </div>
           </div>
-          <div className="text-md mx-auto mt-24 max-w-7xl text-neutral-400">
-            <p>
-              The information on this website is intended solely for the benefit
-              of firms and companies seeking private equity investment capital
-              by providing general information on our services and philosophy.
-              The material on this site is for informational purposes only and
-              does not constitute an offer or solicitation to purchase any
-              investment solutions or a recommendation to buy or sell a security
-              nor is it to be construed as investment advice. Additionally, the
-              material on this site does not constitute a representation that
-              the solutions described therein are suitable or appropriate for
-              any person.
-            </p>
-          </div>
         </div>
       </FadeIn>
     </Container>
