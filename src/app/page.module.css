@@ -1,0 +1,32 @@
+.boxStyleConnected {
+  @apply relative w-[45%] rounded-t-lg border-2 border-blue-800;
+}
+
+.boxStyleConnected::before {
+  content: '';
+  @apply absolute -top-[22px] left-1/2 h-[22px] w-0.5 bg-blue-800;
+}
+
+.boxStyle {
+  @apply relative w-[32%] rounded-t-lg border-2 border-blue-800;
+}
+
+@media (max-width: 768px) {
+  .boxStyleConnected,
+  .boxStyle {
+    @apply mb-5 w-full;
+  }
+}
+
+.boxBottomSection ul {
+  @apply my-2.5 list-none pl-0;
+}
+
+.boxBottomSection li {
+  @apply relative mb-2 pl-5;
+}
+
+.boxBottomSection li::before {
+  content: '•';
+  @apply absolute left-0 text-white;
+}
