@@ -172,16 +172,19 @@ export default function Home() {
                 />
                 <List className="mt-4 text-neutral-600">
                   <ListItem>
-                    Provides upfront funding for tenant improvements.
+                    TI allowance and commissions on-time and in-full
                   </ListItem>
                   <ListItem>
-                    Allows for higher rent in exchange for better TI packages.
+                    No landlord operating, solvency or credit risk
                   </ListItem>
                   <ListItem>
-                    Ensures on-time and in-full reimbursement of TI expenses.
+                    Rental obligations remain the same as original lease
                   </ListItem>
                   <ListItem>
-                    Reduces tenant risk associated with landlord deficiencies.
+                    Ability to up-size TI if necessary (with corresponding increase in rental rate)
+                  </ListItem>
+                  <ListItem>
+                    Simple agreements with minimal legal work
                   </ListItem>
                 </List>
               </>
