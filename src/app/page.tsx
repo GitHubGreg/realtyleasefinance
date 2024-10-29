@@ -44,110 +44,15 @@ export default function Home() {
         <FadeIn>
           <div className="px-6 lg:px-8">
             <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-900 [text-wrap:balance] sm:text-7xl">
-              Secure high quality corporate credit for discounted pricing
+              Simple lease finance solutions for corporate tenants and landlords
             </h1>
             <p className="mt-6 text-xl text-neutral-600">
-              Realty Lease Finance Corporation provides upfront capital for
-              leasing costs in exchange for direct payments from corporate
-              tenants. RELEAF transactions are generally structured as five-year
-              cash flow streams with an annual cash yield of 25.5% to investors.
+              Realty Lease Finance Corporation provides upfront capital to cover
+              leasing costs, enabling lease-up to landlords, and certainty of
+              timely funding to tenants and brokers.
             </p>
           </div>
         </FadeIn>
-      </Container>
-
-      <Container className="mt-24 rounded-4xl bg-neutral-100 py-20 sm:mt-32 lg:mt-40">
-        <SectionIntro title="Overview">
-          <PropertyDetails
-            title=""
-            detailSpecs1={[
-              { title: 'Entity', value: 'RELEAF Portfolio LP' },
-              { title: 'Inception', value: 'Q4 2024' },
-              { title: 'Investment Type', value: 'Promissory Note' },
-              { title: 'Currency', value: 'USD' },
-              { title: 'Net Rate', value: '10%' },
-              { title: 'Amortization', value: '5 Years; Monthly' },
-            ]}
-            detailSpecs2={[
-              { title: 'Term', value: '5 Years' },
-              {
-                title: 'Annual Return',
-                value: '25.5% Net Cash-on-Cash / 10% Net IRR',
-              },
-              {
-                title: 'Distributions',
-                value: 'Quarterly starting first full quarter after funding',
-              },
-              { title: 'Total Payments', value: '20' },
-              { title: 'Leverage', value: 'None' },
-              { title: 'Avg Annual Interest Spread', value: '1.2%' },
-            ]}
-            detailSpecs3={[
-              { title: 'Management Fee', value: 'None' },
-              { title: 'Performance Fee', value: 'None' },
-              {
-                title: 'Minimum Investment',
-                value:
-                  "$250,000 subject to GP's discretion to accept lesser amount",
-              },
-              { title: 'Closings', value: 'Monthly' },
-            ]}
-          />
-        </SectionIntro>
-      </Container>
-
-      <Container className="mt-24 sm:mt-32 lg:mt-40">
-        <SectionIntro title="RELEAF Mechanics">
-          <p className="text-md mt-6 text-neutral-600">
-            Specialized Direct Lease Payments from High Quality Corporate
-            Tenants
-          </p>
-          <p className="text-md mt-4 text-neutral-900">Corporate Lease</p>
-          <div className="mt-8 flex flex-col items-center">
-            <div className="mb-5 w-3/4 rounded bg-neutral-900 p-4 text-center text-white">
-              <h3 className="text-2xl font-bold">RENTAL INCOME</h3>
-              <p className="text-md mt-2">
-                New &ldquo;Financing Technology&rdquo;
-              </p>
-            </div>
-            <div className="flex w-full justify-between">
-              <BoxSection
-                title="RELEAF"
-                subtitle="Realty Lease Finance Corp"
-                body={
-                  <>
-                    <p>
-                      Portion of rental income for the first five years of the
-                      lease agreement is directly paid to RELEAF.
-                    </p>
-                    <p>
-                      RELEAF has direct contracts with high quality corporate
-                      tenants; no landlord risk.
-                    </p>
-                  </>
-                }
-                parentClass={styles.boxStyleConnected}
-              />
-              <BoxSection
-                title="LANDLORD"
-                body={
-                  <>
-                    <p>
-                      For the first five years, the balance of the rental income
-                      after RELEAF payments are paid directly to landlord by
-                      tenant.
-                    </p>
-                    <p>
-                      Landlord immediately benefits from increased occupancy and
-                      after five years collects full lease income.
-                    </p>
-                  </>
-                }
-                parentClass={styles.boxStyleConnected}
-              />
-            </div>
-          </div>
-        </SectionIntro>
       </Container>
 
       <Container className="mt-24 rounded-4xl bg-neutral-100 py-20 sm:mt-32 lg:mt-40">
@@ -272,198 +177,40 @@ export default function Home() {
         </SectionIntro>
       </Container>
 
-      {/* Add Case Study section here */}
-
-      <Container className="mt-24 sm:mt-32 lg:mt-40">
-        <SectionIntro title="RELEAF Underwriting">
-          <p className="text-md mt-6 text-neutral-600">High Quality Credit</p>
-          <p className="text-md mt-4 text-neutral-900">Current Pipeline</p>
-          <div className="mt-8 flex flex-wrap justify-between">
-            <div className="w-full p-4 md:w-1/2">
-              <p className="text-md mb-4 text-center text-neutral-600">
-                RELEAF Pipeline-Tenant Industry Composition
-              </p>
-              <Image
-                src={buildCloudinaryUrl(
-                  'v1727229105/opportunities/RELEAF/releaf-pipeline-categories_gqirzo.png',
-                )}
-                alt="RELEAF Pipeline Categories"
-                width={520}
-                height={520}
-              />
-            </div>
-            <div className="w-full p-4 md:w-1/2">
-              <p className="text-md mb-4 text-center text-neutral-600">
-                RELEAF Pipeline-Tenant Industry Composition
-              </p>
-              <Image
-                src={buildCloudinaryUrl(
-                  'v1727230851/opportunities/RELEAF/releaf-pipeline-listed-not-listed-v2_sjtfuv.png',
-                )}
-                alt="RELEAF Pipeline Listed vs Not Listed"
-                width={520}
-                height={520}
-              />
-            </div>
-          </div>
-          <Image
-            src={buildCloudinaryUrl(
-              'v1727231321/opportunities/RELEAF/releaf-logos_y1kpcb.png',
-            )}
-            alt="RELEAF Logos"
-            width={1120}
-            height={200}
-            className="mt-10"
-          />
-        </SectionIntro>
-      </Container>
-
-      <Container className="mt-24 rounded-4xl bg-neutral-100 py-20 sm:mt-32 lg:mt-40">
-        <SectionIntro title="Downside Protection">
-          <p className="text-md mt-6 text-neutral-600">
-            RELEAF Risk Mitigation
-          </p>
-          <div className="mt-8 flex flex-wrap justify-between">
-            <BoxSection
-              title="Tenant Credit Risk"
-              body={
-                <>
-                  <p className="font-bold">
-                    To protect against risk of tenant default:
-                  </p>
-                  <ul className="mt-2 list-disc pl-5">
-                    <li>
-                      Focus on securing large tenants with good credit and
-                      strong financials
-                    </li>
-                    <li>
-                      Tenants required to provide full financial package for
-                      credit analysis
-                    </li>
-                    <li>
-                      Failure of tenant to make RELEAF payments triggers lease
-                      default
-                    </li>
-                    <li>
-                      RELEAF recovery rights have priority in the event of
-                      tenant default
-                    </li>
-                  </ul>
-                </>
-              }
-              parentClass={styles.boxStyle}
-            />
-            <BoxSection
-              title="Landlord Performance Risk"
-              body={
-                <>
-                  <p className="font-bold">
-                    To protect against risk of landlord not fulfilling their
-                    lease obligations:
-                  </p>
-                  <ul className="mt-2 list-disc pl-5">
-                    <li>
-                      Work exclusively with high-quality, well-capitalized
-                      landlords
-                    </li>
-                    <li>
-                      Missed RELEAF payments from landlord default triggers
-                      landlord guarantee to RELEAF
-                    </li>
-                  </ul>
-                </>
-              }
-              parentClass={styles.boxStyle}
-            />
-            <BoxSection
-              title="Tenant Improvement Risk"
-              body={
-                <>
-                  <p className="font-bold">
-                    To protect against risk of misallocated tenant improvement
-                    funds:
-                  </p>
-                  <ul className="mt-2 list-disc pl-5">
-                    <li>
-                      Work exclusively with reputable landlords and management
-                      companies
-                    </li>
-                    <li>
-                      RELEAF manages the entire tenant improvement process
-                    </li>
-                  </ul>
-                </>
-              }
-              parentClass={styles.boxStyle}
-            />
-          </div>
-        </SectionIntro>
-      </Container>
-
-      <Container className="mt-24 sm:mt-32 lg:mt-40">
-        <SectionIntro title="RELEAF Structure">
-          <p className="text-md mt-6 text-neutral-600">RELEAF Portfolio LP</p>
-          <Image
-            src={buildCloudinaryUrl(
-              'v1727232084/opportunities/RELEAF/releaf-structure_dxu43m.png',
-            )}
-            alt="RELEAF Structure"
-            width={1120}
-            height={630}
-            className="mt-8"
-          />
-        </SectionIntro>
-      </Container>
-
-      <Container className="mt-24 rounded-4xl bg-neutral-100 py-20 sm:mt-32 lg:mt-40">
-        <SectionIntro title="Your Investor Experience">
-          <p className="text-md mb-6 mt-6 text-neutral-600">
-            A Dedicated Investor Relations Team Is Always Available To You
+      <Container className="relative isolate mt-24 overflow-hidden rounded-4xl bg-gray-900 py-20 text-white sm:mt-32 lg:mt-40">
+        <SectionIntro title="Contact Us" invert={true}>
+          <p className="text-md mt-6 text-white">
+            For more information please contact your leasing agent or contact us
+            directly at{' '}
+            <a
+              href="mailto:info@realtyleasefinance.com"
+              className="font-semibold underline decoration-2 transition-colors hover:text-[#7775D6]"
+            >
+              info@realtyleasefinance.com
+            </a>
           </p>
         </SectionIntro>
-        <div className="mx-8 mt-8 flex flex-wrap justify-between">
-          <ArrowSections
-            sections={[
-              {
-                title: 'Step 1',
-                subtitle: 'Commitment',
-                content:
-                  'Commitment letter outlining subscription amount which can be called in-part or in full within 12 months.',
-              },
-              {
-                title: 'Step 2',
-                subtitle: 'Subscription',
-                content:
-                  'Subscription documents and legal agreements prepared for review and execution.',
-              },
-              {
-                title: 'Step 3',
-                subtitle: 'Funding',
-                content:
-                  'Capital call notice for partial or full commitment amount with a 10-day funding window.',
-              },
-              {
-                title: 'Step 4',
-                subtitle: 'Distributions & Reporting',
-                content: (
-                  <div>
-                    <div>
-                      First of twenty (20) quarterly distributions paid fifteen
-                      (15) days following one full quarter after funding.
-                    </div>
-                    <div className={'mt-3'}>
-                      Investor Portal provides all documents including,
-                      quarterly reports, capital accounts, distribution notices
-                      & tax documents.
-                    </div>
-                  </div>
-                ),
-              },
-            ]}
+        <svg
+          viewBox="0 0 1024 1024"
+          aria-hidden="true"
+          className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
+        >
+          <circle
+            r={512}
+            cx={512}
+            cy={512}
+            fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)"
+            fillOpacity="0.7"
           />
-        </div>
+          <defs>
+            <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
+              <stop stopColor="#7775D6" />
+              <stop offset={1} stopColor="#E935C1" />
+            </radialGradient>
+          </defs>
+        </svg>
       </Container>
-      <ContactSection />
+
       <Footer />
     </>
   )

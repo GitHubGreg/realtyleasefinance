@@ -6,7 +6,7 @@ interface LogoProps {
 
 export const Logo: React.FC<LogoProps> = ({ className }) => {
   return (
-    <div className={`flex flex-col items-center ${className}`}>
+    <div className={`flex flex-col items-center ${className} cursor-default`}>
       <h1 className="text-6xl font-bold tracking-tight text-neutral-900">
         RELEAF
       </h1>

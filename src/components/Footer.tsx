@@ -115,15 +115,18 @@ export function Footer() {
     <Container as="footer" className="mt-24 px-0 sm:mt-32 lg:mt-40 lg:px-0">
       <FadeIn>
         <div className="mt-24 flex flex-wrap items-center justify-between gap-x-6 gap-y-4 border-t border-neutral-900/10 pt-12">
-          <Link href="/" aria-label="Home">
-            <Logo />
-          </Link>
-          <p className="text-sm text-neutral-700">
-            © {new Date().getFullYear()} Group RMC. All rights reserved.
-          </p>
+          <div className="text-sm text-neutral-700">
+            <div className="font-semibold leading-snug">Group RMC</div>
+            <div className="leading-snug">One World Trade Center</div>
+            <div className="leading-snug">Suite 83G</div>
+            <div className="leading-snug">New York, NY 10007</div>
+          </div>
+
+          <Logo />
           <div className="mx-auto mb-6 max-w-7xl text-xs text-neutral-400">
-            The information on this website is intended solely for the benefit
-            of firms and companies seeking private equity investment capital by
+            ©{new Date().getFullYear()} Group RMC. All rights reserved. The
+            information on this website is intended solely for the benefit of
+            firms and companies seeking private equity investment capital by
             providing general information on our services and philosophy. The
             material on this site is for informational purposes only and does
             not constitute an offer or solicitation to purchase any investment
