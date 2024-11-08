@@ -1,6 +1,5 @@
 import { type Metadata } from 'next'
 import Image from 'next/image'
-import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { List, ListItem } from '@/components/List'
@@ -47,9 +46,9 @@ export default function Home() {
               Simple lease finance solutions for corporate tenants and landlords
             </h1>
             <p className="mt-6 text-xl text-neutral-600">
-              Realty Lease Finance Corporation provides upfront capital to cover
-              leasing costs, enabling lease-up to landlords, and certainty of
-              timely funding to tenants and brokers.
+              Realty Lease Finance Corporation provides upfront capital to fund
+              leasing costs, providing certainty of timely funding to tenants
+              and brokers.
             </p>
           </div>
         </FadeIn>
@@ -78,7 +77,7 @@ export default function Home() {
                     space.
                   </ListItem>
                   <ListItem invert={true}>
-                    Tenant willing to pay higher rent for more tenant
+                    Tenant generally willing to pay higher rent for more tenant
                     improvements.
                   </ListItem>
                   <ListItem invert={true}>
@@ -176,39 +175,40 @@ export default function Home() {
           />
         </SectionIntro>
       </Container>
-
-      <Container className="relative isolate mt-24 overflow-hidden rounded-4xl bg-gray-900 py-20 text-white sm:mt-32 lg:mt-40">
-        <SectionIntro title="Contact Us" invert={true}>
-          <p className="text-md mt-6 text-white">
-            For more information please contact your leasing agent or contact us
-            directly at{' '}
-            <a
-              href="mailto:info@realtyleasefinance.com"
-              className="font-semibold underline decoration-2 transition-colors hover:text-[#7775D6]"
-            >
-              info@realtyleasefinance.com
-            </a>
-          </p>
-        </SectionIntro>
-        <svg
-          viewBox="0 0 1024 1024"
-          aria-hidden="true"
-          className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
-        >
-          <circle
-            r={512}
-            cx={512}
-            cy={512}
-            fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)"
-            fillOpacity="0.7"
-          />
-          <defs>
-            <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
-              <stop stopColor="#7775D6" />
-              <stop offset={1} stopColor="#E935C1" />
-            </radialGradient>
-          </defs>
-        </svg>
+      <Container>
+        <Container className="relative isolate mx-8 mt-24 overflow-hidden rounded-4xl bg-gray-900 py-20 text-white sm:mt-32 lg:mt-40">
+          <SectionIntro title="Contact Us" invert={true}>
+            <p className="text-md mt-6 text-white">
+              For more information please contact your leasing agent or contact
+              us directly at{' '}
+              <a
+                href="mailto:info@realtyleasefinance.com"
+                className="font-semibold underline decoration-2 transition-colors hover:text-[#7775D6]"
+              >
+                info@realtyleasefinance.com
+              </a>
+            </p>
+          </SectionIntro>
+          <svg
+            viewBox="0 0 1024 1024"
+            aria-hidden="true"
+            className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
+          >
+            <circle
+              r={512}
+              cx={512}
+              cy={512}
+              fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)"
+              fillOpacity="0.7"
+            />
+            <defs>
+              <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
+                <stop stopColor="#7775D6" />
+                <stop offset={1} stopColor="#E935C1" />
+              </radialGradient>
+            </defs>
+          </svg>
+        </Container>
       </Container>
 
       <Footer />

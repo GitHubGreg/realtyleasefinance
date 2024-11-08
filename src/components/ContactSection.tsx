@@ -5,7 +5,7 @@ import { Offices } from '@/components/Offices'
 
 export function ContactSection() {
   return (
-    <Container className="mt-24 px-0 sm:mt-32 lg:mt-40 lg:px-0">
+    <Container className="mt-24 rounded-4xl bg-neutral-100 py-20 sm:mt-32 lg:mt-40">
       <FadeIn className="-mx-6 rounded-4xl bg-neutral-950 px-8 py-12 sm:mx-0 sm:py-16 md:px-16">
         <div className="max-w-4xl">
           <div className="max-w-xl">
@@ -14,7 +14,9 @@ export function ContactSection() {
             </h2>
             <div className="mt-10 border-t border-white/10 pt-10">
               <div className="mt-6 text-base text-neutral-400">
-                <h3 className="font-semibold text-white">Group RMC</h3>
+                <h3 className="font-semibold text-white">
+                  Realty Lease Finance Corp
+                </h3>
                 <p>One World Trade Center</p>
                 <p>Suite 83G</p>
                 <p>New York, NY 10007</p>

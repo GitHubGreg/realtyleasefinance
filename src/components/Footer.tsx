@@ -116,7 +116,9 @@ export function Footer() {
       <FadeIn>
         <div className="mt-24 flex flex-wrap items-center justify-between gap-x-6 gap-y-4 border-t border-neutral-900/10 pt-12">
           <div className="text-sm text-neutral-700">
-            <div className="font-semibold leading-snug">Group RMC</div>
+            <div className="font-semibold leading-snug">
+              Realty Lease Finance Corp
+            </div>
             <div className="leading-snug">One World Trade Center</div>
             <div className="leading-snug">Suite 83G</div>
             <div className="leading-snug">New York, NY 10007</div>
@@ -124,16 +126,17 @@ export function Footer() {
 
           <Logo />
           <div className="mx-auto mb-6 max-w-7xl text-xs text-neutral-400">
-            ©{new Date().getFullYear()} Group RMC. All rights reserved. The
-            information on this website is intended solely for the benefit of
-            firms and companies seeking private equity investment capital by
-            providing general information on our services and philosophy. The
-            material on this site is for informational purposes only and does
-            not constitute an offer or solicitation to purchase any investment
-            solutions or a recommendation to buy or sell a security nor is it to
-            be construed as investment advice. Additionally, the material on
-            this site does not constitute a representation that the solutions
-            described therein are suitable or appropriate for any person.
+            ©{new Date().getFullYear()} Realty Lease Finance Corp. All rights
+            reserved. The information on this website is intended solely for the
+            benefit of firms and companies seeking private equity investment
+            capital by providing general information on our services and
+            philosophy. The material on this site is for informational purposes
+            only and does not constitute an offer or solicitation to purchase
+            any investment solutions or a recommendation to buy or sell a
+            security nor is it to be construed as investment advice.
+            Additionally, the material on this site does not constitute a
+            representation that the solutions described therein are suitable or
+            appropriate for any person.
           </div>
         </div>
       </FadeIn>
