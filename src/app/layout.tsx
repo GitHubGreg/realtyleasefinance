@@ -8,13 +8,13 @@ export const metadata: Metadata = {
     default: 'RELEAF - Realty Lease Finance Corp',
   },
   icons: {
-    icon: '/favicon.ico',
-    // If you have different sizes, you can add them like this:
-    // apple: '/apple-icon.png',
-    // shortcut: '/shortcut-icon.png',
+    icon: [
+      { url: '/favicon.ico', sizes: '32x32' },
+      { url: '/favicon.png', sizes: '192x192' },
+    ],
   },
   description:
-    'Upfront capital to fund leasing costs, providing certainty of timely funding to tenants and brokers.',
+    'Simple lease finance solutions for corporate tenants and landlords.',
   openGraph: {
     images: [
       {
