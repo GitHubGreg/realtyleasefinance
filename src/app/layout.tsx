@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: '/social-share-logo.png',
+        url: 'https://www.realtyleasefinance.com/social-share-logo.png',
         width: 1200,
         height: 630,
         alt: 'RELEAF - Realty Lease Finance Corp',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    images: ['/social-share-logo.png'],
+    images: ['https://www.realtyleasefinance.com/social-share-logo.png'],
     description:
       'Simple lease finance solutions for corporate tenants and landlords.',
   },
