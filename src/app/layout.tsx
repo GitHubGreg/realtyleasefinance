@@ -25,13 +25,13 @@ export const metadata: Metadata = {
       },
     ],
     description:
-      'Upfront capital to fund leasing costs, providing certainty of timely funding to tenants and brokers.',
+      'Simple lease finance solutions for corporate tenants and landlords.',
   },
   twitter: {
     card: 'summary_large_image',
     images: ['/social-share-logo.png'],
     description:
-      'Upfront capital to fund leasing costs, providing certainty of timely funding to tenants and brokers.',
+      'Simple lease finance solutions for corporate tenants and landlords.',
   },
 }
 
